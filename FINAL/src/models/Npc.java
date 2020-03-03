@@ -1,8 +1,8 @@
 package models;
 
-public class Npc extends Human{
+public class NPC extends Human{
 
-    public Npc(String name, int health) {
+    public NPC(String name, int health) {
         super(name, health);
     }
 

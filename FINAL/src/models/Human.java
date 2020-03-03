@@ -30,18 +30,18 @@ public class Human implements IAttackable {
 
 
     private int roll(int max, int amountOfRolls){
-                int rolledNum;
-                int endResult = 0;
-                final int min = 1;
+        int rolledNum;
+        int endResult = 0;
+        final int min = 1;
 
-                for(int i = 0 ; i < amountOfRolls; i++){
-                    rolledNum = rng.nextInt((max-min)+1)+min;
-                    endResult = rolledNum+ endResult;
-                }
-            return endResult;
+        for(int i = 0 ; i < amountOfRolls; i++){
+            rolledNum = rng.nextInt((max-min)+1)+min;
+            endResult = rolledNum+ endResult;
+        }
+        return endResult;
     }
-    @Override
 
+    @Override
     public int attack(int rollAccuracy , int rollDamage) {
         //rolls 1, 10-sided die
         int accuracy = rollAccuracy;

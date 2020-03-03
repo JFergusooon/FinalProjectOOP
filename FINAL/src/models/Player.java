@@ -1,8 +1,8 @@
 package models;
 
 public class Player extends Human {
-    private int reputation=0;
-    private String[] inventory;
+    private int reputation = 0;
+    private String[][] inventory;
 
     public Player(String name, int health) {
         super(name, health);
@@ -16,11 +16,11 @@ public class Player extends Human {
         this.reputation = reputation;
     }
 
-    public String[] getInventory() {
+    public String[][] getInventory() {
         return inventory;
     }
 
-    public void setInventory(String[] inventory) {
+    public void setInventory(String[][] inventory) {
         this.inventory = inventory;
     }
 
