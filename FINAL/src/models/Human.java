@@ -1,15 +1,19 @@
 package models;
 
-import java.util.Random;
+        import java.util.Random;
 
 public class Human implements IAttackable {
     protected String name;
     protected int health;
+    int damage;
+
+    protected boolean isAlive = true;
     static Random rng = new Random();
 
-    public Human(String name, int health) {
+    public Human(String name, int health, boolean isAlive) {
         setName(name);
         setHealth(health);
+        setIsAlive(isAlive);
     }
 
     public String getName() {
@@ -28,6 +32,13 @@ public class Human implements IAttackable {
         this.health = health;
     }
 
+    public boolean isAlive() {
+        return isAlive;
+    }
+
+    public void setIsAlive(boolean alive) {
+        isAlive = alive;
+    }
 
     private int roll(int max, int amountOfRolls){
         int rolledNum;
@@ -45,7 +56,7 @@ public class Human implements IAttackable {
     public int attack(int rollAccuracy , int rollDamage) {
         //rolls 1, 10-sided die
         int accuracy = rollAccuracy;
-        int damage = 0;
+        damage = 0;
         //If roll is 1-3 attack misses
         if(accuracy>=1 && accuracy <= 3){
             damage = 0;
@@ -59,5 +70,9 @@ public class Human implements IAttackable {
             damage = (rollDamage)*2;
         }
         return damage;
+    }
+
+    public int takeDamage(damage) {
+        setHealth(this.health - damage);
     }
 }
