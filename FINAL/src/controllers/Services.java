@@ -45,7 +45,7 @@ public class Services {
 
     public static void newGameMenu() {
         String userName = ConsoleIO.promptForString("Enter Character's name: ");
-        user = new Human(userName, 100);
+        user = new Human(userName, 100, true);
         System.out.println("Character Created.");
 
         String[] options = {"Go To School", "Change Name"};
