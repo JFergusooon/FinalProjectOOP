@@ -4,8 +4,8 @@ public class Player extends Human {
     private int reputation = 0;
     private String[][] inventory;
 
-    public Player(String name, int health) {
-        super(name, health);
+    public Player(String name, int health, int reputation) {
+        super(name, health, true);
     }
 
     public int getReputation() {

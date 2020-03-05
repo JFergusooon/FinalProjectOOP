@@ -3,7 +3,7 @@ package models;
 public class Npc extends Human{
 
     public Npc(String name, int health) {
-        super(name, health);
+        super(name, health, true);
     }
 
     public String interaction(){
