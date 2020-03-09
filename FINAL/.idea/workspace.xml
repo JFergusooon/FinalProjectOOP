@@ -44,7 +44,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$USER_HOME$/quater 2/JankeC_lab6Connect4" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -108,11 +108,13 @@
       <workItem from="1583247998023" duration="1185000" />
       <workItem from="1583250130346" duration="1380000" />
       <workItem from="1583252421360" duration="271000" />
+<!--<<<<<<< Updated upstream-->
       <workItem from="1583333251128" duration="7358000" />
       <workItem from="1583364465601" duration="141000" />
       <workItem from="1583422042872" duration="4948000" />
       <workItem from="1583665611799" duration="11299000" />
       <workItem from="1583764828716" duration="284000" />
+
     </task>
     <task id="LOCAL-00001" summary="NpcController class">
       <created>1583337658815</created>
@@ -127,6 +129,8 @@
       <option name="presentableId" value="LOCAL-00002" />
       <option name="project" value="LOCAL" />
       <updated>1583764892226</updated>
+
+ 
     </task>
     <option name="localTasksCounter" value="3" />
     <servers />
@@ -139,6 +143,7 @@
     <MESSAGE value="NpcController class" />
     <MESSAGE value="Battle class completed" />
     <option name="LAST_COMMIT_MESSAGE" value="Battle class completed" />
+
   </component>
   <component name="WindowStateProjectService">
     <state x="304" y="72" key="#Deployment" timestamp="1583337517316">
@@ -166,8 +171,10 @@
     </state>
     <state x="90" y="71" key="DiffContextDialog/0.0.1536.824@0.0.1536.824" timestamp="1583764954496" />
     <state x="549" y="168" key="FileChooserDialogImpl" timestamp="1583333738429">
+
       <screen x="0" y="0" width="1536" height="824" />
     </state>
+<!--<<<<<<< Updated upstream-->
     <state x="549" y="168" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1583333738429" />
     <state width="1493" height="209" key="GridCell.Tab.0.bottom" timestamp="1583711270938">
       <screen x="0" y="0" width="1536" height="824" />
@@ -185,6 +192,7 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state width="1493" height="209" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1583711270938" />
+
     <state width="1493" height="261" key="GridCell.Tab.1.bottom" timestamp="1582990994058">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -214,6 +222,7 @@
     </state>
     <state x="302" y="146" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1583764958060" />
     <state x="465" y="238" key="com.intellij.ide.util.TipDialog" timestamp="1583665616224">
+   
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="465" y="238" key="com.intellij.ide.util.TipDialog/0.0.1536.824@0.0.1536.824" timestamp="1583665616224" />
@@ -225,6 +234,14 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1583339325536" />
+    <state x="465" y="238" key="com.intellij.ide.util.TipDialog" timestamp="1583422353403">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="465" y="238" key="com.intellij.ide.util.TipDialog/0.0.1536.824@0.0.1536.824" timestamp="1583422353403" />
+    <state x="578" y="330" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1583426025306">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="578" y="330" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1536.824@0.0.1536.824" timestamp="1583426025306" />
     <state x="599" y="204" key="svn.repositoryBrowser" timestamp="1583250823506">
       <screen x="0" y="0" width="1536" height="824" />
     </state>

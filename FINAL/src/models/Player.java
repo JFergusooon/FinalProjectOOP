@@ -4,9 +4,12 @@ public class Player extends Human {
     private int reputation = 0;
     private String[][] inventory;
 
+
     public Player(String name, int health, boolean isAlive) {
         super(name, health, isAlive);
     }
+
+   
 
     public int getReputation() {
         return reputation;

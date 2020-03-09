@@ -1,6 +1,6 @@
 package models;
 
-        import java.util.Random;
+import java.util.Random;
 
 public class Human implements IAttackable {
     protected String name;
@@ -99,7 +99,7 @@ public class Human implements IAttackable {
     }
 
     public int takeDamage() {
-        int attackPower = attack(roll(10,1), roll(6,2));
+        int attackPower = attack(roll(10, 1), roll(6, 2));
         setHealth(getHealth() - attackPower);
         return attackPower;
     }
