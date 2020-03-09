@@ -19,18 +19,6 @@ public class Services {
 
     }
 
-
-
-
-
-
-
-
-
-
-
-
-    //-----------------------------------------------------------------------------------
     public static void mainMenu() {
         String[] options = {"New Game", "Load Game"};
         int choice = ConsoleIO.promptForMenuSelection(options, true);

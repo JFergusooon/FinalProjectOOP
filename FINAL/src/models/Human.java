@@ -48,8 +48,7 @@ public class Human implements IAttackable {
     }
 
     public void setAlive(boolean alive) {
-        //TODO MAKE CHECK FOR isAlive() IN BATTLE CONTROLLER
-        if (currentHealth >0){
+        if (currentHealth > 0){
             isAlive = alive;
         }
         else{
@@ -58,11 +57,16 @@ public class Human implements IAttackable {
     }
 
     public boolean isAlive() {
+
+        if(currentHealth < 0){
+            isAlive = false;
+        }
+        else isAlive = true;
         return isAlive;
     }
 
 
-    private int roll(int max, int amountOfRolls){
+    public int roll(int max, int amountOfRolls){
         int rolledNum;
         int endResult = 0;
         final int min = 1;
