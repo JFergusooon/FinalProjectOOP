@@ -1,7 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="6e44de68-d858-4e05-996d-82bcf416f2ad" name="Default Changelist" comment="" />
+    <list default="true" id="6e44de68-d858-4e05-996d-82bcf416f2ad" name="Default Changelist" comment="finished services">
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/BullyFinalAssignment/controllers/Battle.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/BullyFinalAssignment/controllers/Battle.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/BullyFinalAssignment/controllers/NpcController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/BullyFinalAssignment/controllers/NpcController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/BullyFinalAssignment/controllers/Services.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/BullyFinalAssignment/controllers/Services.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/BullyFinalAssignment/models/Human.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/BullyFinalAssignment/models/Human.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/BullyFinalAssignment/models/NPC.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/BullyFinalAssignment/models/NPC.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/BullyFinalAssignment/models/Player.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/BullyFinalAssignment/models/Player.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/BullyFinalAssignment/prog/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/BullyFinalAssignment/prog/Main.class" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -108,15 +118,12 @@
       <workItem from="1583247998023" duration="1185000" />
       <workItem from="1583250130346" duration="1380000" />
       <workItem from="1583252421360" duration="271000" />
-<!--<<<<<<< Updated upstream-->
       <workItem from="1583333251128" duration="7358000" />
       <workItem from="1583364465601" duration="141000" />
       <workItem from="1583422042872" duration="3618000" />
-=======
       <workItem from="1583333251128" duration="4781000" />
       <workItem from="1583339743263" duration="1559000" />
       <workItem from="1583422342573" duration="3558000" />
->>>>>>> Stashed changes
     </task>
     <task id="LOCAL-00001" summary="NpcController class">
       <created>1583337658815</created>
@@ -142,7 +149,8 @@
     <MESSAGE value="test" />
     <MESSAGE value="NpcController class" />
     <MESSAGE value="Added takeDamage()" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added takeDamage()" />
+    <MESSAGE value="finished services" />
+    <option name="LAST_COMMIT_MESSAGE" value="finished services" />
   </component>
   <component name="WindowStateProjectService">
     <state x="304" y="72" key="#Deployment" timestamp="1583337517316">
@@ -161,9 +169,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="895" y="163" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1536.824@0.0.1536.824" timestamp="1583248870984" />
-    <state x="253" y="8" width="916" height="808" key="CommitChangelistDialog2" timestamp="1583340701454">
+    <state x="253" y="8" width="916" height="808" key="CommitChangelistDialog2" timestamp="1583856353387">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
+    <state x="253" y="8" key="CommitChangelistDialog2/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1583856353387" />
     <state x="253" y="8" width="916" height="808" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1583340701454" />
     <state x="90" y="71" key="DiffContextDialog" timestamp="1583338099002">
       <screen x="0" y="0" width="1536" height="824" />
@@ -172,58 +181,46 @@
     <state x="549" y="168" key="FileChooserDialogImpl" timestamp="1583422810982">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-<!--<<<<<<< Updated upstream-->
-    <state x="549" y="168" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1583333738429" />
-    <state width="1493" height="210" key="GridCell.Tab.0.bottom" timestamp="1583359158403">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state width="1493" height="210" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1583359158403" />
-    <state width="1493" height="210" key="GridCell.Tab.0.center" timestamp="1583359158403">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state width="1493" height="210" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1583359158403" />
-    <state width="1493" height="210" key="GridCell.Tab.0.left" timestamp="1583359158403">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state width="1493" height="210" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1583359158403" />
-    <state width="1493" height="210" key="GridCell.Tab.0.right" timestamp="1583359158403">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state width="1493" height="210" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1583359158403" />
-=======
     <state x="549" y="168" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1583422810982" />
-    <state width="1060" height="210" key="GridCell.Tab.0.bottom" timestamp="1583424742219">
+    <state width="1493" height="208" key="GridCell.Tab.0.bottom" timestamp="1583855022273">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1060" height="210" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1583424742219" />
-    <state width="1060" height="210" key="GridCell.Tab.0.center" timestamp="1583424742219">
+    <state width="1493" height="208" key="GridCell.Tab.0.bottom/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1583855022273" />
+    <state width="1493" height="208" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1583850618967" />
+    <state width="1493" height="208" key="GridCell.Tab.0.center" timestamp="1583855022272">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1060" height="210" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1583424742219" />
-    <state width="1060" height="210" key="GridCell.Tab.0.left" timestamp="1583424742219">
+    <state width="1493" height="208" key="GridCell.Tab.0.center/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1583855022272" />
+    <state width="1493" height="208" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1583850618967" />
+    <state width="1493" height="208" key="GridCell.Tab.0.left" timestamp="1583855022272">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1060" height="210" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1583424742219" />
-    <state width="1060" height="210" key="GridCell.Tab.0.right" timestamp="1583424742219">
+    <state width="1493" height="208" key="GridCell.Tab.0.left/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1583855022272" />
+    <state width="1493" height="208" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1583850618967" />
+    <state width="1493" height="208" key="GridCell.Tab.0.right" timestamp="1583855022273">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1060" height="210" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1583424742219" />
->>>>>>> Stashed changes
-    <state width="1493" height="261" key="GridCell.Tab.1.bottom" timestamp="1582990994058">
+    <state width="1493" height="208" key="GridCell.Tab.0.right/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1583855022273" />
+    <state width="1493" height="208" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1583850618967" />
+    <state width="1493" height="261" key="GridCell.Tab.1.bottom" timestamp="1583853681090">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
+    <state width="1493" height="261" key="GridCell.Tab.1.bottom/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1583853681090" />
     <state width="1493" height="261" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1582990994058" />
-    <state width="1493" height="261" key="GridCell.Tab.1.center" timestamp="1582990994058">
+    <state width="1493" height="261" key="GridCell.Tab.1.center" timestamp="1583853681090">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
+    <state width="1493" height="261" key="GridCell.Tab.1.center/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1583853681090" />
     <state width="1493" height="261" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1582990994058" />
-    <state width="1493" height="261" key="GridCell.Tab.1.left" timestamp="1582990994058">
+    <state width="1493" height="261" key="GridCell.Tab.1.left" timestamp="1583853681089">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
+    <state width="1493" height="261" key="GridCell.Tab.1.left/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1583853681089" />
     <state width="1493" height="261" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1582990994058" />
-    <state width="1493" height="261" key="GridCell.Tab.1.right" timestamp="1582990994058">
+    <state width="1493" height="261" key="GridCell.Tab.1.right" timestamp="1583853681090">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
+    <state width="1493" height="261" key="GridCell.Tab.1.right/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1583853681090" />
     <state width="1493" height="261" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1582990994058" />
     <state x="367" y="0" key="SettingsEditor" timestamp="1583366667261">
       <screen x="0" y="0" width="1536" height="824" />
@@ -233,20 +230,6 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="302" y="146" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1583337683901" />
-<!--<<<<<<< Updated upstream-->
-    <state x="465" y="238" key="com.intellij.ide.util.TipDialog" timestamp="1583422049399">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state x="465" y="238" key="com.intellij.ide.util.TipDialog/0.0.1536.824@0.0.1536.824" timestamp="1583422049399" />
-    <state x="578" y="330" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1583338579966">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state x="578" y="330" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1536.824@0.0.1536.824" timestamp="1583338579966" />
-    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1583339325536">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1583339325536" />
-=======
     <state x="465" y="238" key="com.intellij.ide.util.TipDialog" timestamp="1583422353403">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -255,7 +238,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="578" y="330" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1536.824@0.0.1536.824" timestamp="1583426025306" />
->>>>>>> Stashed changes
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1583339325536">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1583339325536" />
     <state x="599" y="204" key="svn.repositoryBrowser" timestamp="1583250823506">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
