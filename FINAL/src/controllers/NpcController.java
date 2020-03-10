@@ -1,10 +1,10 @@
 package controllers;
 
-import lib.ConsoleIO;
-import models.*;
-import utility.RNG;
+        import lib.ConsoleIO;
+        import models.*;
+        import utility.RNG;
 
-import java.util.Random;
+        import java.util.Random;
 
 public class NpcController {
 

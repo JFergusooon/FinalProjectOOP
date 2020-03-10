@@ -22,8 +22,8 @@ public class Services {
     static Npc principal = new Npc("Principal", 150, true);
 
     private static String[] classDescriptions = {"Walking into the class they call Trigonometry. Math has always been easy " +
-                    "for you, you have a natural talent for most subjects \nin school, the only real factor is if you can " +
-                    "keep yourself out of trouble. You take your seat.",
+            "for you, you have a natural talent for most subjects \nin school, the only real factor is if you can " +
+            "keep yourself out of trouble. You take your seat.",
             "The gym room smells like your average boy’s locker room, sweat and socks. This place feels like a danger zone. " +
                     "You didn’t bring any clothes \nto change into so your standing out again.” There are three rows of lockers " +
                     "and three different showers\n with many stalls.",
