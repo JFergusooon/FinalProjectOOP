@@ -12,12 +12,14 @@ import java.util.Random;
 public class Services {
     static Random rng = new Random();
     private static int classPeriod = 0;
-    public static Player user;
+    public static Player user = new Player("DEFAULT", 100, true);
     private static ArrayList<String> classes = new ArrayList<>();//"Math, Gym, Science, Chemistry, English, History, Geography, Library");
 
-    NpcController npcController = new NpcController();
-    Npc bully1 = new Npc("Bully", 75);
-    Npc normy = new Npc("Some Kid", 50);
+    static NpcController normy1Controller = new NpcController();
+    static Battle battle = new Battle();
+    static Npc bully1 = new Npc("Bully", 75, true);
+    static Npc normy1 = new Npc("Some Kid", 50, true);
+    static Npc principal = new Npc("Principal", 150, true);
 
     private static String[] classDescriptions = {"Walking into the class they call Trigonometry. Math has always been easy " +
                     "for you, you have a natural talent for most subjects \nin school, the only real factor is if you can " +
@@ -42,7 +44,6 @@ public class Services {
             "The quietest place in the building, the library. Many bookshelves that are covered in dust. Not many use them" +
                     " now because of the internet.\nThere are some computers, mostly likely used for gaming. Some of the schools" +
                     " artists display their stuff \nhere for the few people to see that come here."};
-    private static String lunchroomString = "Lunchroom";
     private static String lunchroomDescription = "Finally, lunch time! You sit down alone and start eating a yummy chicken " +
             "pot pie. As you eat you \nlook around the noisy lunchroom, the walls are very tall and have banners on them of " +
             "all the neighboring \nschools in the same district. Your school is the bull.";
@@ -65,20 +66,73 @@ public class Services {
         boolean userChoice = ConsoleIO.promptForBoolean("What will you do? (option 1 or 2)", "1", "2");
         if(userChoice == false){
             user.setReputation(user.getReputation() - 4);
-            System.out.println("(-4 rep) Your current Rep: "+ user.getReputation());
+            System.out.println("(-4 rep) "+ "Your current rep "+ user.getReputation() +"\n\n");
         }
         else{
             user.setReputation(user.getReputation() + 4);
-            System.out.println("(+4 rep) Your current Rep: "+ user.getReputation());
+            System.out.println("(+4 rep) "+ "Your current rep "+ user.getReputation() +"\n\n");
+        }
+    }
+
+    public static void postFightCheck(Player player, Npc npc){
+        if(player.isAlive()){
+            player.setReputation(player.getReputation()+2);
+            System.out.println("You beat the "+npc.getName()+" to a pulp. (+2 rep) "+ "Your current rep "+ user.getReputation() +"\n\n");
+        }
+        else {
+            player.setReputation(player.getReputation()-3);
+            System.out.println("You got knocked out! (-3 rep) "+"Your current rep "+ user.getReputation() +"\n\n");
+        }
+    }
+
+    public static void getRandomInteraction(){
+        int rolledNum = rng.nextInt((2 - 0) + 1 ) + 0;
+        switch (rolledNum) {
+            case 0:
+                System.out.println("Some kid approaches you...");
+                if(normy1Controller.protectNPC(user)) {
+                    battle.battleRun(user, bully1);
+                    postFightCheck(user, bully1);
+                }
+                break;
+            case 1:
+                int rolledNum1 = rng.nextInt((1-0)+1)+0;
+                switch (rolledNum1){
+                    case 0:
+                        System.out.println("Some girl walks up to you, looks like she may ask you for a favor...");
+                        break;
+                    case 1:
+                        System.out.println("Some guy approaches you, looks like he may ask something of you...");
+                        break;
+                }
+                if(normy1Controller.helpNPC(user)){
+                    user.setReputation(user.getReputation() + 4);
+                    System.out.println("(+4 rep) "+ "Your current rep "+ user.getReputation() +"\n\n");
+                }
+                else{
+                    user.setReputation(user.getReputation()-4);
+                    System.out.println("(-4 rep) "+ "Your current rep "+ user.getReputation() +"\n\n");
+                }
+                break;
+            case 2:
+                System.out.println("Looks like a bully is approaching...");
+                if(normy1Controller.fightBully(user)){
+                    battle.battleRun(user, bully1);
+                    postFightCheck(user, bully1);
+            }
+            else{
+                System.out.println("You escaped the bully, for now...You make it t your next class.");
+                user.setReputation(user.getReputation()+4);
+                System.out.println("(+0 rep) "+ "Your current rep "+ user.getReputation() +"\n\n");
+            }
+                break;
         }
     }
 
     public static void getRandomClass(){
-
-
         classPeriod++;
         String currentClassRoom;
-        int max = classes.size();
+        int max = classes.size() - 1;
         int min = 0;
         int rolledNum = rng.nextInt((max-min)+1)+min;
 
@@ -89,6 +143,7 @@ public class Services {
             System.out.println("Next Class: " + currentClassRoom);
             System.out.println(classDescriptions[rolledNum] + "\n");
             classes.remove(rolledNum);
+            getRandomInteraction();
         }
     }
 
@@ -104,8 +159,20 @@ public class Services {
         for(int i = 0; i < 9; i++) {
             getRandomClass();
         }
+        checkForEnding();
+        System.out.println("The End!");
     }
 
+    public static void checkForEnding(){
+        if(user.getReputation() < 0){
+            battle.battleRun(user, principal);
+            postFightCheck(user, principal);
+            System.out.println("You have become the Ultimate Jock, even if you lost a fight. All Jocks loose some battles.\n\n");
+        }
+        else {
+            System.out.println("You graduated the toughest school in the US! You are the finest student yet! \n\n");
+        }
+    }
 
     public static void startMenu() {
         String[] options = {"New Game", "Load Game"};
@@ -114,16 +181,17 @@ public class Services {
         switch(choice) {
             case 1:
                 newGameMenu();
+                break;
             case 2:
                 loadGameMenu();
+                break;
         }
     }
 
     public static void newGameMenu() {
         String userName = ConsoleIO.promptForString("Enter Character's name: ");
-        user = new Player(userName, 100, 0);
         System.out.println("Character Created.");
-
+        user.setName(userName);
         String[] options = {"Go To School", "Change Name"};
         int choice = ConsoleIO.promptForMenuSelection(options, true);
 
