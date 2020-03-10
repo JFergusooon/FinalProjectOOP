@@ -2,13 +2,23 @@ package controllers;
 
 import lib.ConsoleIO;
 import models.Human;
+import models.Npc;
 import models.Player;
+
+import java.util.ArrayList;
+import java.util.Random;
 
 
 public class Services {
+    static Random rng = new Random();
     private static int classPeriod = 0;
     public static Player user;
-    private static String[] classes = {"Math, Gym, Science, Chemistry, English, History, Geography, Library"};
+    private static ArrayList<String> classes = new ArrayList<>();//"Math, Gym, Science, Chemistry, English, History, Geography, Library");
+
+    NpcController npcController = new NpcController();
+    Npc bully1 = new Npc("Bully", 75);
+    Npc normy = new Npc("Some Kid", 50);
+
     private static String[] classDescriptions = {"Walking into the class they call Trigonometry. Math has always been easy " +
                     "for you, you have a natural talent for most subjects \nin school, the only real factor is if you can " +
                     "keep yourself out of trouble. You take your seat.",
@@ -37,30 +47,63 @@ public class Services {
             "pot pie. As you eat you \nlook around the noisy lunchroom, the walls are very tall and have banners on them of " +
             "all the neighboring \nschools in the same district. Your school is the bull.";
 
+    public static void run() {
+        classes.add("Math");
+        classes.add("Gym");
+        classes.add("Science");
+        classes.add("Chemistry");
+        classes.add("English");
+        classes.add("History");
+        classes.add("Geography");
+        classes.add("Library");
+
+        System.out.println("Welcome to the Jock!");
+        startMenu();
+    }
+
     public static void userMakeChoice(){
         boolean userChoice = ConsoleIO.promptForBoolean("What will you do? (option 1 or 2)", "1", "2");
         if(userChoice == false){
             user.setReputation(user.getReputation() - 4);
+            System.out.println("(-4 rep) Your current Rep: "+ user.getReputation());
         }
         else{
             user.setReputation(user.getReputation() + 4);
+            System.out.println("(+4 rep) Your current Rep: "+ user.getReputation());
         }
     }
 
-    public static void run() {
-        System.out.println("Welcome to the Jock!");
-        startMenu();
+    public static void getRandomClass(){
+
+
+        classPeriod++;
+        String currentClassRoom;
+        int max = classes.size();
+        int min = 0;
+        int rolledNum = rng.nextInt((max-min)+1)+min;
+
+        if(classPeriod == 5){
+            System.out.println(lunchroomDescription +"\n");
+        }else {
+            currentClassRoom = classes.get(rolledNum);
+            System.out.println("Next Class: " + currentClassRoom);
+            System.out.println(classDescriptions[rolledNum] + "\n");
+            classes.remove(rolledNum);
+        }
     }
+
     public static void gameMethod() {
         String openingScene = ("You just joined a new school, supposedly the toughest school around, Bullworth Academy. " +
                 "Today is your first day! Your mother\ndrops you off at the door and you walk inside. The school looks " +
                 "very nice and open, kids scrambled around talking to \none another. You start to stand out because everyone " +
                 "seems to have a uniform on whereas you only have \na sweater on with jeans. You walk to the principal’s " +
-                "office. \n\nAfter 15 minutes of him telling you to have a clean nose you get your uniform walk to the bathroom" +
-                " to change....will you put on the uniform?\n(y/n)");
+                "office. \n\nAfter 15 minutes of him telling you to have a clean nose, you get your uniform and walk to the " +
+                "bathroom to change....will you put on the uniform?\n(y/n)");
         System.out.println(openingScene);
         userMakeChoice();
-
+        for(int i = 0; i < 9; i++) {
+            getRandomClass();
+        }
     }
 
 
