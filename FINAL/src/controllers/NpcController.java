@@ -53,7 +53,7 @@ public class NpcController {
 
         String[] provokingDialogue = {"You look like you wanna punch me right now, why don’t you huh? (Fight/Run) ",
                 "Get over here so I can be the shit out of you new kid. (Fight/Run) ",
-                "You gonna fight? (y/n) ",
+                "You gonna fight? (Fight/Run) ",
                 "Yo "+ player.getName() + ", lets settle this like men do back east. (Fight/Run) "};
         String[] takeLunchMoneyDialogue = {"I will be taking you lunch money for the next couple days. (Fight/Run) ",
                 "Give me some money so I can go buy some milk you f**. (Fight/Run) ",
