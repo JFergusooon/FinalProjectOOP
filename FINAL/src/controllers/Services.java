@@ -94,6 +94,11 @@ public class Services {
                     battle.battleRun(user, bully1);
                     postFightCheck(user, bully1);
                 }
+                else{
+                    user.setReputation(user.getReputation() - 4);
+                    System.out.println("You deny the request for help and walk away. The Kid then gets beat up alone, but you made your choice.");
+                    System.out.println("(-4 rep) "+ "Your current rep "+ user.getReputation() +"\n\n");
+                }
                 break;
             case 1:
                 int rolledNum1 = rng.nextInt((1-0)+1)+0;

@@ -6,6 +6,8 @@
       <change beforePath="$PROJECT_DIR$/out/production/BullyFinalAssignment/controllers/NpcController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/BullyFinalAssignment/controllers/NpcController.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/BullyFinalAssignment/controllers/Services.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/BullyFinalAssignment/controllers/Services.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/BullyFinalAssignment/prog/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/BullyFinalAssignment/prog/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/controllers/Services.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/controllers/Services.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prog/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/prog/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -119,6 +121,7 @@
       <workItem from="1583333251128" duration="4781000" />
       <workItem from="1583339743263" duration="1559000" />
       <workItem from="1583422342573" duration="3558000" />
+      <workItem from="1583857392411" duration="452000" />
     </task>
     <task id="LOCAL-00001" summary="NpcController class">
       <created>1583337658815</created>
