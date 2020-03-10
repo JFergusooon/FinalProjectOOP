@@ -11,7 +11,6 @@ public class Npc extends Human{
     }
 
     public String interaction(){
-        //TODO make texts based on npc type
         return null;
     }
 

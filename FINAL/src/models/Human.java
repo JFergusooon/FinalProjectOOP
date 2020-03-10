@@ -98,9 +98,14 @@ public class Human implements IAttackable {
         return damage;
     }
 
-    public int takeDamage() {
+    public int takeDamage(boolean isBlocking) {
         int attackPower = attack(roll(10, 1), roll(6, 2));
-        setHealth(getHealth() - attackPower);
+        if(isBlocking){
+            attackPower = attackPower/3;
+            setCurrentHealth(getCurrentHealth() - (attackPower));
+        }
+        setCurrentHealth(getCurrentHealth() - attackPower);
+
         return attackPower;
     }
 }
